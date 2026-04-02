@@ -22,7 +22,9 @@ sudo dnf install clang gcc cmake ninja-build libcxx libcxx-devel
 ```
 
 <details>
+
 <summary>The versions of the tools I used</summary>
+
 ```bash
 cxx-std-module$ ./scripts/print_tools_version.sh
 ========== clang++ ==========
@@ -34,6 +36,7 @@ cmake version 3.31.11
 ========== ninja ==========
 1.13.1
 ```
+
 </details>
 
 ## Run
