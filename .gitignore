@@ -1,0 +1,13 @@
+# cmake
+build
+.cache
+
+# clang & gcc
+main
+
+# clang
+std.pcm
+
+# gcc
+gcm.cache
+std.o
