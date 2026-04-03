@@ -4,9 +4,9 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 project(HELLO_STD_MODULE LANGUAGES CXX)
 
+
 set(CLANG_MODULE_DIR "/usr/share/libc++/v1")
 set(GCC_MODULE_DIR "/usr/include/c++/15/bits")
-
 
 add_library(STD_MODULE)
 target_compile_features(STD_MODULE PUBLIC cxx_std_23)
@@ -40,11 +40,4 @@ target_sources(${PROJECT_NAME} PRIVATE
     main.cpp
 )
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_23)
-target_compile_options(${PROJECT_NAME} PRIVATE
-    $<$<CXX_COMPILER_ID:Clang>:-stdlib=libc++>
-    -Wno-reserved-module-identifier
-)
 target_link_libraries(${PROJECT_NAME} PRIVATE STD_MODULE)
-target_link_options(${PROJECT_NAME} PRIVATE
-    $<$<CXX_COMPILER_ID:Clang>:-stdlib=libc++>
-)
