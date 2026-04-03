@@ -2,18 +2,13 @@
 
 This repository shows how to use C++ std modules.
 
-Also see:
-
-- [Using the C++23 std Module with Clang 18 - 0xStubs](https://0xstubs.org/using-the-c23-std-module-with-clang-18/)
-- [Using the C++23 std Module with GCC 15 - 0xStubs](https://0xstubs.org/using-the-c23-std-module-with-gcc-15/)
-
-Thanks to 0xStubs' blogs. The most useful articles about using C++ std modules.
+You are now on branch `cmake-manually`. The configuration in `CMakeLists.txt` only available on Linux.
 
 ## Dependencies
 
 Make sure you have `clang++`, `g++`, `cmake`, `ninja` programs, and `libc++` dynamic libraries.
 
-Make sure `/usr/share/libc++/v1/std.cppm` and `/usr/include/c++/15/bits/std.cc` are exist.
+Make sure `/usr/share/libc++/v1/std.cppm` and `/usr/include/c++/15/bits/std.cc` are exist, or edit the path in `CMakeLists.txt`.
 
 On Fedora, install dependencies with:
 
